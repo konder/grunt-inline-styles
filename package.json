@@ -2,8 +2,8 @@
   "name": "grunt-inline-styles",
   "version": "1.0.0",
   "description": "Inject external styles to your HTMLs.",
-  "homepage": "http://sahibinden.github.io/grunt-inline-styles/",
-  "repository": "https://github.com/sahibinden/grunt-inline-styles.git",
+  "homepage": "https://github.com/konder/grunt-inline-styles/",
+  "repository": "https://github.com/konder/grunt-inline-styles.git",
   "author": {
     "name": "sahibinden.com",
     "email": "labs@sahibinden.com",
