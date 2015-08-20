@@ -17,7 +17,8 @@ module.exports = function (grunt) {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      verbose: false
+      verbose: false,
+      pwd: null
     });
 
     // Iterate over all specified file groups.
@@ -48,7 +49,7 @@ module.exports = function (grunt) {
             grunt.log.writeln(styleUrl);
           }
 
-          var cssUrl = parts.join('/') + '/' + styleUrl;
+          var cssUrl = (pwd ? pwd : (parts.join('/') + '/')) + styleUrl;
 
           if (!grunt.file.exists(cssUrl)) {
             grunt.log.warn('CSS file "' + cssUrl + '" not found.');
