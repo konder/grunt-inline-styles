@@ -49,7 +49,7 @@ module.exports = function (grunt) {
             grunt.log.writeln(styleUrl);
           }
 
-          var cssUrl = (pwd ? pwd : (parts.join('/') + '/')) + styleUrl;
+          var cssUrl = (options.pwd ? options.pwd : (parts.join('/') + '/')) + styleUrl;
 
           if (!grunt.file.exists(cssUrl)) {
             grunt.log.warn('CSS file "' + cssUrl + '" not found.');
